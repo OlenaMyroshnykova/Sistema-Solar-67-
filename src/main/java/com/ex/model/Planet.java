@@ -96,7 +96,7 @@ public class Planet {
                 Período de rotación (días): %.2f
                 """,
                 name, satelliteCount, mass, volume, diameter, averageDistanceFromSun,
-                type.getDescription(), visibleToNakedEye);
+                type.getDescription(), visibleToNakedEye, orbitalPeriod, rotationPeriod);
     }
 
     public double calculateDensity() {
