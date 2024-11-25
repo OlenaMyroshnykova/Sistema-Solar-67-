@@ -9,6 +9,8 @@ public class Planet {
     private int averageDistanceFromSun;
     private PlanetType type;
     private boolean visibleToNakedEye;
+    private double orbitalPeriod;
+    private double rotationPeriod;
 
     public enum PlanetType {
         GASEOSO("Gigante gaseoso"),
@@ -36,9 +38,18 @@ public class Planet {
         this.averageDistanceFromSun = averageDistanceFromSun;
         this.type = type;
         this.visibleToNakedEye = visibleToNakedEye;
+        this.orbitalPeriod = orbitalPeriod;
+        this.rotationPeriod = rotationPeriod;
     }
 
-    // Геттеры
+    public double getOrbitalPeriod() {
+        return orbitalPeriod;
+    }
+
+    public double getRotationPeriod() {
+        return rotationPeriod;
+    }
+
     public String getName() {
         return name;
     }
@@ -81,6 +92,8 @@ public class Planet {
                 Distancia media al Sol (millones km): %d
                 Tipo: %s
                 Visible a simple vista: %b
+                Período orbital (años): %.2f
+                Período de rotación (días): %.2f
                 """,
                 name, satelliteCount, mass, volume, diameter, averageDistanceFromSun,
                 type.getDescription(), visibleToNakedEye);
