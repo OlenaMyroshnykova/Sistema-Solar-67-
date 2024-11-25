@@ -62,3 +62,4 @@ classDiagram
 ```
 ### Test coverage
 
+<img src="./src/images/PlanetCoverage.png" title="coverage report" alt="coverage report"/>
